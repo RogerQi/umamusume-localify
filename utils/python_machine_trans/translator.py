@@ -23,7 +23,7 @@ class UmaMusumeStrTrans:
 
         # There are a various types of special characters in JSON
         # check tests/test_translator.py for common examples
-        self.regex_exp = r"(?:%\w*|\\\\n|\\\\r|\\\\|\\r|\\n|\\t|\\r\\n|\n|<.*?>|{\d*})+"
+        self.regex_exp = r"(?:%\w*|\\\\n|\\\\r|\\\\|\\r\\n|\\r|\\n|\\t|\t|[\r\n]+|<.*?>|{.*?})+"
 
     def trans_one(self, raw_str):
         """
